@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTg2X" crossorigin="anonymous">
+
+
+    <style>
+        div {
+            width: 60%;
+            margin: auto;
+            background-color: ivory;
+        }
+
+        p {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <img src="images/signup.jpg" alt="Sign Up Banner" /><br />
+    </div>
+    <div style="width:450px; display:table">
+        <p></p>
+        <label for="title">Title *</label>
+        <input id="title" list="titles" />
+        <datalist id="titles">
+            <option value="Mr">
+            <option value="Mrs">
+            <option value="Ms">
+            <option value="Dr">
+        </datalist><br />
+        <p></p>
+        <label for="first-name">First Name *</label>
+        <input id="first-name" type="text"><br />
+        <p></p>
+        <label for="last-name">Last Name *</label>
+        <input id="last-name" type="text"><br />
+        <p></p>
+        <label for="email">Email *</label>
+        <input id="email" type="url"><br />
+        <p></p>
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date"><br />
+        <p></p>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="number"><br />
+        <p></p>
+        <input type="radio" name="radiogender" value="Male">Male</input><br />
+        <input type="radio" name="radiogender" value="Female">Female</input><br />
+        <p></p>
+        <button type="submit" name="signup" value="signup">Sign Up</button>
+    </div>
+</body>
+
+</html>
